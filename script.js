@@ -1,5 +1,6 @@
 function compute()
 {
+    var result = document.getElementById("result");
     // Cleaning result
     result.innerHTML = '';
 
@@ -18,7 +19,6 @@ function compute()
     var years = Number(document.getElementById("years").value);
     var interest = principal * years * rate / 100;
     var year = Number(new Date().getFullYear()) + years;
-    var result = document.getElementById("result");
 
     // Forming innerHTML that will go into result
     var html = '<br>';
