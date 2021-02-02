@@ -1,5 +1,8 @@
 function compute()
 {
+    // Cleaning result
+    result.innerHTML = '';
+
     var principal = document.getElementById("principal").value;
 
     // Validating that principal is a positive number
